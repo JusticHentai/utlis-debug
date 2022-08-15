@@ -1,3 +1,3 @@
-# Vite-plugins-debug
+# Utils-debug
 
-vite vue3 template for plugin debug
+simple program for debug in utils-monorepo

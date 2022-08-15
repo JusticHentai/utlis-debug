@@ -1,20 +1,17 @@
 {
-  "name": "@justichentai/vite-plugins-debug",
+  "name": "@justichentai/utils-debug",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "dev": "vite",
-    "dev:h5": "vite",
-    "dev:pc": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "@justichentai/frame-animation": "workspace:*"
   },
   "devDependencies": {
-    "@justichentai/vite-plugin-simple-env": "workspace:*",
     "@types/node": "^18.6.5",
     "@vitejs/plugin-vue": "^3.0.1",
     "cross-env": "^7.0.3",
@@ -23,6 +20,7 @@
     "sass": "^1.54.4",
     "typescript": "^4.7.4",
     "vite": "^3.0.4",
+    "vue": "^3.2.37",
     "vue-tsc": "^0.39.5"
   }
 }
