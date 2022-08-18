@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@justichentai/config-parsing": "workspace:*",
     "@justichentai/frame-animation": "workspace:*"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FrameAnimation from './components/frame-animation/FrameAnimation.vue'
+import FrameAnimation from '@components/frame-animation/FrameAnimation.vue'
 </script>
 
 <template>
@@ -10,5 +10,8 @@ import FrameAnimation from './components/frame-animation/FrameAnimation.vue'
 
 <style scoped lang="scss">
 .app-box {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 </style>
