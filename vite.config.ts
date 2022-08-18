@@ -1,9 +1,9 @@
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { defineConfig } from 'vite'
-// import testConfigParsing from './src/components/config-parsing/config-paring'
-//
-// testConfigParsing()
+import testConfigParsing from './src/components/config-parsing/config-paring'
+
+testConfigParsing()
 
 export default defineConfig({
   plugins: [vue()],

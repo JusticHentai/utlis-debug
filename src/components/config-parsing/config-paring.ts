@@ -1,10 +1,5 @@
-import configParsing from '@justichentai/config-parsing/index'
-import path from 'path'
-
-console.log('configParsing解析中')
-console.log(__dirname)
-console.log(path.resolve(__dirname, 'test.config.ts'))
+import configParsing from '@justichentai/config-parsing'
 
 export default function test() {
-  configParsing(path.resolve(__dirname, 'test.config.ts'))
+  configParsing('./src/components/config-parsing/test.config.ts')
 }
