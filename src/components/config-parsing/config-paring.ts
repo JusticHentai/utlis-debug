@@ -1,5 +1,8 @@
 import configParsing from '@justichentai/config-parsing'
 
-export default function test() {
-  configParsing('./src/components/config-parsing/test.config.ts')
+export default async function test() {
+  const res = await configParsing(
+    './src/components/config-parsing/test.config.json'
+  )
+  console.log(res)
 }
