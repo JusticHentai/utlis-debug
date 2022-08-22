@@ -1,12 +1,20 @@
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { defineConfig } from 'vite'
-import testConfigParsing from './src/components/config-parsing/config-paring'
+// import testConfigParsing from './src/components/config-parsing/config-paring'
 
-testConfigParsing()
+// testConfigParsing()
 
 export default defineConfig({
   plugins: [vue()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // 设置全局 scss 样式
+        additionalData: `@import "@/global.scss";`,
+      },
+    },
+  },
   resolve: {
     alias: {
       // 配置快速引用路径

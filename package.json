@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
-    "dev": "vite",
+    "dev": "vite --host",
     "preview": "vite preview"
   },
   "dependencies": {
     "@justichentai/config-parsing": "workspace:*",
-    "@justichentai/frame-animation": "workspace:*"
+    "@justichentai/frame-animation": "workspace:*",
+    "@justichentai/pixijs-utils": "workspace:*",
+    "@justichentai/scss-utils": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^18.6.5",
