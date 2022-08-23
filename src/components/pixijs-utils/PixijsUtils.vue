@@ -2,7 +2,9 @@
 import PixijsUtils from '@justichentai/pixijs-utils/index'
 import { onMounted, ref } from 'vue'
 // @ts-ignore 忽略图片类型
-import keyFrameTest from '@assets/keyFrameTest.png'
+// import keyFrameTest from '@assets/keyFrameTest.png'
+// @ts-ignore 忽略图片类型
+import koko from '@assets/koko.jpg'
 
 const el = ref()
 
@@ -16,9 +18,9 @@ onMounted(() => {
   pixiUtils.value.init()
 
   pixiUtils.value.addImage({
-    url: keyFrameTest,
-    width: 1857,
-    height: 800,
+    url: koko,
+    width: 216,
+    height: 340,
     anchor: 0,
   })
 })
