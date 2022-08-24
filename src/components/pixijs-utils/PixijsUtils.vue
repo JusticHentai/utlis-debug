@@ -2,13 +2,13 @@
 import PixijsUtils from '@justichentai/pixijs-utils/index'
 import { onMounted, ref } from 'vue'
 // @ts-ignore 忽略图片类型
-// import keyFrameTest from '@assets/keyFrameTest.png'
-// @ts-ignore 忽略图片类型
 import koko from '@assets/koko.jpg'
+// @ts-ignore 忽略图片类型
+import lianlian from '@assets/lianlian.png'
 
 const el = ref()
 
-onMounted(() => {
+onMounted(async () => {
   const pixiUtils = ref(
     new PixijsUtils({
       el: el.value,
@@ -17,11 +17,44 @@ onMounted(() => {
 
   pixiUtils.value.init()
 
-  pixiUtils.value.addImage({
-    url: koko,
-    width: 216,
-    height: 340,
-    anchor: 0,
+  const container = pixiUtils.value.addContainer({
+    x: 200,
+    y: 200,
+  })
+
+  pixiUtils.value.addImage(
+    {
+      url: koko,
+      x: 100,
+      y: 100,
+      width: 216,
+      height: 340,
+      anchor: 0,
+      interactive: true,
+      buttonMode: true,
+    },
+    container
+  )
+
+  pixiUtils.value.addUserIcon({
+    url: lianlian,
+    x: 100,
+    y: 50,
+    diameter: 162,
+  })
+
+  await pixiUtils.value.addQrcode({
+    url: 'https://ff-dev.bilibili.com/',
+    x: 0,
+    y: 0,
+    query: {
+      _port_: 8081,
+      _ip_: '10.23.177.38',
+    },
+  })
+
+  pixiUtils.value.addText({
+    text: '喜欢我莲莲吗',
   })
 })
 </script>
