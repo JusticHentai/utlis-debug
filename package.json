@@ -12,7 +12,8 @@
     "@justichentai/config-parsing": "workspace:*",
     "@justichentai/frame-animation": "workspace:*",
     "@justichentai/pixijs-utils": "workspace:*",
-    "@justichentai/scss-utils": "workspace:*"
+    "@justichentai/scss-utils": "workspace:*",
+    "pixi.js": "^6.5.2"
   },
   "devDependencies": {
     "@types/node": "^18.6.5",

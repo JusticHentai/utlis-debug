@@ -54,7 +54,16 @@ onMounted(async () => {
   })
 
   pixiUtils.value.addText({
-    text: '喜欢我莲莲吗',
+    x: 300,
+    y: 50,
+    text: '喜欢我莲莲吗喜欢我莲莲吗喜欢我莲莲吗喜欢我莲莲吗',
+    style: {
+      fill: '#ffeaa7',
+      wordWrap: true,
+      wordWrapWidth: 300,
+      breakWords: true,
+      fontSize: 50,
+    },
   })
 })
 </script>
