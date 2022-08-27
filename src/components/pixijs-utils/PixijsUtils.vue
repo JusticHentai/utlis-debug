@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PixijsUtils from '@justichentai/pixijs-utils/index'
+import PixijsUtils from '@justichentai/pixijs-utils'
 import { onMounted, ref } from 'vue'
 // @ts-ignore 忽略图片类型
 import koko from '@assets/koko.jpg'

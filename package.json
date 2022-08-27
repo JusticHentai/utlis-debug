@@ -6,7 +6,7 @@
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "dev": "vite --host",
-    "preview": "vite preview"
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "@justichentai/config-parsing": "workspace:*",
