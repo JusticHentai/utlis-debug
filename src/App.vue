@@ -1,12 +1,14 @@
 <script setup lang="ts">
 // import FrameAnimation from '@components/frame-animation/FrameAnimation.vue'
-import PixijsUtils from '@components/pixijs-utils/PixijsUtils.vue'
+// import PixijsUtils from '@components/pixijs-utils/PixijsUtils.vue'
+import Resize from '@components/resize/Resize.vue'
 </script>
 
 <template>
   <div class="douza-app">
     <!--    <FrameAnimation></FrameAnimation>-->
-    <PixijsUtils></PixijsUtils>
+    <!--    <PixijsUtils></PixijsUtils>-->
+    <Resize></Resize>
   </div>
 </template>
 

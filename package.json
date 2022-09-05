@@ -12,6 +12,7 @@
     "@justichentai/config-parsing": "workspace:*",
     "@justichentai/frame-animation": "workspace:*",
     "@justichentai/pixijs-utils": "workspace:*",
+    "@justichentai/resize": "workspace:*",
     "@justichentai/scss-utils": "workspace:*",
     "pixi.js": "^6.5.2"
   },
