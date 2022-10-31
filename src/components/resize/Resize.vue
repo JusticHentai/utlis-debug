@@ -3,7 +3,11 @@ import resize from '@justichentai/resize'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  resize()
+  resize({
+    debounce: {
+      duration: 500,
+    },
+  })
 })
 
 function testClick() {}
