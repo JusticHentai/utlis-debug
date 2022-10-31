@@ -44,7 +44,7 @@ onMounted(async () => {
   })
 
   await pixiUtils.value.addQrcode({
-    url: 'https://ff-dev.bilibili.com/',
+    url: '',
     x: 0,
     y: 0,
     query: {
