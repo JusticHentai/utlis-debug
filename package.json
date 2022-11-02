@@ -14,7 +14,8 @@
     "@justichentai/pixijs-utils": "workspace:*",
     "@justichentai/resize": "workspace:*",
     "@justichentai/scss-utils": "workspace:*",
-    "pixi.js": "^6.5.2"
+    "pixi.js": "^6.5.2",
+    "scroll-into-view-if-needed": "^2.2.29"
   },
   "devDependencies": {
     "@types/node": "^18.7.4",
